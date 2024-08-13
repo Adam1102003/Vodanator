@@ -62,7 +62,7 @@ class _ScannerPageState extends State<ScannerPage> with SingleTickerProviderStat
   Future<void> _checkSerialNumber(String serialNumber) async {
     // Sends an HTTP GET request to check the product details based on the serial number
     final response = await http.get(
-      Uri.parse('http://192.168.28.249:8000/myapi/products/get_product_by_serial/?serialNumber=$serialNumber'),
+      Uri.parse('https://adam8.pythonanywhere.com/myapi/products/get_product_by_serial/?serialNumber=$serialNumber'),
     );
 
     if (response.statusCode == 200) {
