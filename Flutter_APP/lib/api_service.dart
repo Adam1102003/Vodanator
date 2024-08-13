@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 // A service class that handles API requests
 class ApiService {
   // The URL endpoint for the login API
-  final String loginUrl = 'http://192.168.28.249:8000/account/token/';
+  final String loginUrl = 'https://adam8.pythonanywhere.com/account/token/';
 
   // A method to perform the login request
   Future<String?> login(String email, String password) async {
